@@ -1,0 +1,34 @@
+[project]
+name = "restim"
+version = "1.63"
+
+dependencies = [
+  "numpy>=2.0.0",
+  "websockets",
+  "sounddevice",
+  "soundfile>=0.13.1",
+  "matplotlib!=3.9.*",
+  "PySide6>=6.9.3",
+  "crc",
+  "msdparser",
+  "protobuf>=6.0.0",
+  "pystream-protobuf",
+  "stm32loader @ git+https://github.com/diglet48/stm32loader@feat/device-table",
+  "pyqtgraph",
+  "ahrs",
+  "intelhex",
+]
+requires-python = ">=3.10"
+authors = [{name = "diglet48"}]
+description = "e-stim control software for desktop PC"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+
+[project.urls]
+Repository = "https://github.com/diglet48/restim.git"
+
+[dependency-groups]
+dev = [
+  # "protoletariat",
+]
